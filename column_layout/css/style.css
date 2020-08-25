@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Philosopher:ital,wght@0,700;1,400&display=swap');
+
+.header {
+  /* position: relative; */
+  height: 60px;
+  background-color: #6cceaf;
+}
+
+.header-title {
+  line-height: 60px;
+  padding-left: 20px;
+  margin: 0;
+
+  font-family: 'Montserrat Alternates', sans-serif;;
+}
+
+.column {
+  box-sizing: border-box;
+  position: absolute;
+  height: 650px;
+  width: 400px;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  border: 5px solid orange;
+  border-radius: 30px;
+}
+
+.column.first {
+  left: 50px;
+}
+
+.column.second {
+  left: 500px;
+}
+
+.column.third {
+  left: 950px;
+}
+
+.column-title {
+  margin: 30px;
+  font-family: 'Philosopher', sans-serif;
+  font-weight: 700;
+}
+
+.content {
+  margin: 30px;
+  font-family: 'Philosopher', sans-serif;
+  font-style: italic;
+}
+
+.footer {
+  box-sizing: border-box;
+  height: 40px;
+  /* Добавил ширину, потому что по умолчанию ширина ровно как надпись установлена. Почему?*/
+  width: 100%;
+  background-color: #6cceaf;
+  padding-left: 20px;
+  position: absolute;
+  bottom: 0;
+
+  font-family: 'Philosopher', sans-serif;
+  font-style: italic;
+  line-height: 40px;
+  font-size: 20px;
+}
