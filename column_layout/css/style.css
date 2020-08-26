@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-html {
+:root {
   font-size: 10px;
   --grn: #6cceaf;
   --orng: orange;
