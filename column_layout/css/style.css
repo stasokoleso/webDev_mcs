@@ -1,54 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Philosopher:ital,wght@0,700;1,400&display=swap');
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  --grn: #6cceaf;
+  --orng: orange;
+}
+
 .header {
-  height: 60px;
-  background-color: #6cceaf;
+  height: 6rem;
+  background-color: var(--grn);
 }
 
 .header-title {
-  line-height: 60px;
-  padding-left: 20px;
+  line-height: 6rem;
+  padding-left: 2rem;
 
   font-family: 'Montserrat Alternates', sans-serif;;
 }
 
+.column-container {
+  text-align: center;
+}
+
 .column {
   display: inline-block;
-  height: 600px;
-  width: 400px;
+  height: 60rem;
+  width: 40rem;
+  text-align: justify;
   vertical-align: top;
 
-  padding: 20px;
-  margin: 20px 0 20px 15px;
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 
-  border: 5px solid orange;
-  border-radius: 30px;
+  border: .5rem solid var(--orng);
+  border-radius: 3rem;
+}
+
+.column.two {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .column-title {
   font-family: 'Philosopher', sans-serif;
   font-weight: 700;
+  font-size: 2rem;
+  padding-bottom: 2rem;
 }
 
 .items-list {
-  padding: 0 10px 0 20px;
+  padding: 0 1rem 0 2rem;
   list-style-type: circle;
 }
 
-.content {
+li {
   font-family: 'Philosopher', sans-serif;
   font-style: italic;
+  font-size: 1.5rem;
 
   text-align: justify;
 }
 
 .footer {
-  height: 40px;
-  background-color: #6cceaf;
-  padding-left: 20px;
+  height: 4rem;
+  background-color: var(--grn);
+  padding-left: 2rem;
 
   font-family: 'Philosopher', sans-serif;
   font-style: italic;
-  line-height: 40px;
-  font-size: 20px;
+  line-height: 4rem;
+  font-size: 2rem;
 }

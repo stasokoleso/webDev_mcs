@@ -1,0 +1,167 @@
+@import url(normalize.css);
+
+.page {
+
+}
+
+/* Header block */
+
+.header {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logotype {
+  padding-left: 20px;
+  color: #E50043;
+}
+
+.navigation-links {
+  padding-right: 20px;
+}
+
+.link {
+  padding-right: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+
+  color: #E50043;
+
+}
+
+/* Hero container */
+
+.hero-container {
+  height: 950px;
+  width: 1440px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url(/img/evian_origins_logo.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.hero-title {
+  font-size: 100px;
+  color: #E50043;
+}
+
+/* Content block */
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Mission */
+
+.mission-container {
+  height: 280px;
+  width: 1040px;
+
+  margin-top: 150px;
+
+  box-sizing: border-box;
+  border: 3px solid #F8BFC7;
+  border-radius: 20px;
+
+  padding: 24px;
+
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.mission-title {
+  font-weight: 600;
+}
+
+/* Products */
+
+.content-product {
+  display: flex;
+  width: 1040px;
+
+  margin-top: 150px;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-img {
+  height: 600px;
+  width: auto;
+}
+
+.product-name {
+  padding-top: 20px;
+  text-align: center;
+
+  font-family: Arial;
+  font-weight: 400;
+}
+
+/* Product card */
+
+.product-card {
+  width: 1040px;
+  height: 280px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 150px;
+
+  box-sizing: border-box;
+  border: 3px solid #F8BFC7;
+  border-radius: 20px;
+}
+
+.product-card-img {
+  margin: auto 80px;
+}
+
+.product-card-details {
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.text {
+
+}
+
+/* Footer block */
+
+.footer {
+  display: flex;
+  height: 140px;
+  
+  margin-top: 150px;
+  align-items: center;
+  justify-content: flex-start;
+
+  background: #F8BFC7;
+}
+
+.copyright {
+  font-size: 50px;
+  font-family: Arial;
+  font-weight: 400;
+  color: white;
+  padding-left: 20px;
+}
+
