@@ -1,8 +1,18 @@
 @import url(normalize.css);
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  }
+
 :root {
   --col-red: #E50043;
   --col-pink: #F8BFC7;
+}
+
+body {
+  font-size: 10px;
 }
 
 /* Header block */
@@ -10,25 +20,30 @@
 .header {
   position: fixed;
   display: flex;
-  height: 50px;
+  height: 5rem;
   width: 100%;
+
+  background-color: #fff;
+
   justify-content: space-between;
   align-items: center;
 }
 
 .logotype {
-  padding-left: 20px;
+  padding-left: 2rem;
   color: var(--col-red);
+  font-size: 3rem;
 }
 
 .navigation-links {
-  padding-right: 20px;
+  display: inline-block;
+  padding-right: 2rem;
 }
 
 .link {
-  padding-right: 20px;
+  padding-right: 2rem;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 500;
 
   color: var(--col-red);
@@ -37,21 +52,26 @@
 
 /* Hero container */
 
+.main-container {
+  padding-top: 5rem;
+}
+
 .hero-container {
-  height: 950px;
-  width: 1440px;
+  height: 60rem;
+  width: 100%;
   
   display: flex;
   align-items: center;
   justify-content: center;
 
   background-image: url(/img/evian_origins_logo.png);
-  background-size: auto;
+  background-position: center center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .hero-title {
-  font-size: 100px;
+  font-size: 5rem;
   color: var(--col-red);
 }
 
@@ -66,80 +86,86 @@
 /* Mission */
 
 .mission-container {
-  height: 280px;
-  width: 1040px;
+  height: 28rem;
+  width: 80rem;
 
-  margin-top: 150px;
+  margin-top: 5rem;
 
   box-sizing: border-box;
-  border: 3px solid var(--col-pink);
-  border-radius: 20px;
+  border: .3rem solid var(--col-pink);
+  border-radius: 2rem;
 
-  padding: 24px;
+  padding: 2.4rem;
 
   font-family: Arial;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
 }
 
 .mission-title {
   font-weight: 600;
+  margin: 1rem 0;
+}
+
+.mission-text {
+  margin: 2rem 0;
 }
 
 /* Products */
 
 .content-product {
   display: flex;
-  width: 1040px;
+  width: 80rem;
 
-  margin-top: 150px;
+  margin-top: 5rem;
 
   align-items: center;
   justify-content: space-between;
 }
 
 .product-img {
-  height: 600px;
+  height: 60rem;
   width: auto;
 }
 
 .product-name {
-  padding-top: 20px;
+  padding-top: 2rem;
   text-align: center;
 
   font-family: Arial;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 
 /* Product card */
 
 .product-card {
-  width: 1040px;
-  height: 280px;
+  width: 80rem;
+  height: 28rem;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  margin-top: 150px;
+  padding: 1rem;
+  margin-top: 5rem;
 
   box-sizing: border-box;
-  border: 3px solid var(--col-pink);
-  border-radius: 20px;
+  border: .3rem solid var(--col-pink);
+  border-radius: 2rem;
 }
 
 .product-card-img {
-  margin: auto 80px;
+  margin: auto 8rem;
 }
 
 .product-card-details {
-  height: 220px;
+  height: 22rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   font-family: Arial;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
 }
 
@@ -151,9 +177,9 @@
 
 .footer {
   display: flex;
-  height: 140px;
+  height: 5rem;
   
-  margin-top: 150px;
+  margin-top: 5rem;
   align-items: center;
   justify-content: flex-start;
 
@@ -161,10 +187,10 @@
 }
 
 .copyright {
-  font-size: 50px;
+  font-size: 2rem;
   font-family: Arial;
   font-weight: 400;
   color: white;
-  padding-left: 20px;
+  padding-left: 2rem;
 }
 
