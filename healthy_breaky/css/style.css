@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.header, .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 5rem;
+  width: 100vw;
+  /* margin-bottom: 2rem; */
+
+  background-color: coral;
+}
+
+.title {
+  font-size: 4rem;
+  color: snow;
+  text-shadow: 2px 2px grey;
+}
+
+.big-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+
+  margin: 2rem 0;
+  height: calc(100vh - 14rem);
+  width: 100vw;
+}
+
+.container {
+  height: auto;
+  width: calc((100vw - 8rem)/3);
+
+  overflow: scroll;
+
+  border: solid 1px grey;
+}
+
+.img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-bottom: 100%;
+}
+
+.avocado {
+  background-image: url(/img/avocado-toast.jpg);
+}
+
+.pancakes {
+  background-image: url(/img/oatmeal-pancakes.jpg);
+}
+
+.spirulina {
+  background-image: url(/img/spirulina-smooth.jpg);
+}
+
+.name {
+  font-size: 1.5rem;
+  margin: 0.5rem 0 0.5rem 1rem;
+}
+
+.text {
+  height: auto;
+  margin: 0 1rem 0 1rem;
+  font-size: 1.2rem;
+}
+
+.ingredients {
+  padding: 0.5rem 0;
+  font-weight: 700;
+}
+
+.footer {
+  font-size: 2rem;
+  justify-content: left;
+  padding-left: 2rem;
+  color: snow;
+}
