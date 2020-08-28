@@ -1,5 +1,3 @@
-@import url(normalize.css);
-
 * {
   padding: 0;
   margin: 0;
@@ -36,14 +34,15 @@ body {
 }
 
 .navigation-links {
-  display: inline-block;
-  padding-right: 2rem;
+  display: flex;
+  width: auto;
+  list-style-type: none;
 }
 
 .link {
   padding-right: 2rem;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
 
   color: var(--col-red);
