@@ -1,21 +1,24 @@
 @import url(normalize.css);
 
-.page {
-
+:root {
+  --col-red: #E50043;
+  --col-pink: #F8BFC7;
 }
 
 /* Header block */
 
 .header {
+  position: fixed;
   display: flex;
   height: 50px;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
 }
 
 .logotype {
   padding-left: 20px;
-  color: #E50043;
+  color: var(--col-red);
 }
 
 .navigation-links {
@@ -28,7 +31,7 @@
   font-size: 20px;
   font-weight: 500;
 
-  color: #E50043;
+  color: var(--col-red);
 
 }
 
@@ -49,7 +52,7 @@
 
 .hero-title {
   font-size: 100px;
-  color: #E50043;
+  color: var(--col-red);
 }
 
 /* Content block */
@@ -69,7 +72,7 @@
   margin-top: 150px;
 
   box-sizing: border-box;
-  border: 3px solid #F8BFC7;
+  border: 3px solid var(--col-pink);
   border-radius: 20px;
 
   padding: 24px;
@@ -121,7 +124,7 @@
   margin-top: 150px;
 
   box-sizing: border-box;
-  border: 3px solid #F8BFC7;
+  border: 3px solid var(--col-pink);
   border-radius: 20px;
 }
 
@@ -154,7 +157,7 @@
   align-items: center;
   justify-content: flex-start;
 
-  background: #F8BFC7;
+  background: var(--col-pink);
 }
 
 .copyright {
