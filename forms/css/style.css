@@ -129,7 +129,7 @@ input[type="submit"] {
 
 .greetings {
   height: fit-content;
-  width: 50%;
+  width: calc(100vw - 10rem);
   margin: 0 auto;
 
   background-color: var(--tangerine);
