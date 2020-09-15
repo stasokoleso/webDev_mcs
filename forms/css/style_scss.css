@@ -1,0 +1,187 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4rem;
+  padding-left: 3rem;
+  background-color: #0B4F6C;
+  color: #F49F0A;
+}
+
+.header .navigation .navigation-list {
+  text-decoration: none;
+  list-style: none;
+}
+
+.header .navigation .navigation-list li {
+  display: inline;
+  margin-right: 2rem;
+}
+
+.header .navigation .navigation-list li > * {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #F49F0A;
+}
+
+.page {
+  height: calc(100vh - 8rem);
+  background: #F49F0A;
+  background: radial-gradient(circle at top right, #F49F0A 0%, #F08700 11%, #00A6A6 59%);
+  background-position: top;
+}
+
+.page .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: calc(100vh - 15rem);
+}
+
+.page .form-container .feedback .radio-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page .form-container .feedback .radio-form label {
+  width: auto;
+  margin: 0 0 .5rem 0;
+}
+
+.page .form-container .feedback .radio-form input {
+  width: auto;
+  margin: 0 1rem;
+}
+
+.page .form-container .feedback .radio-form span {
+  font-size: 1.5rem;
+}
+
+.page .form-container .feedback input[type="submit"] {
+  width: 10rem;
+  padding: 0;
+  margin-top: 1rem;
+  background-color: #0B4F6C;
+  color: snow;
+  -webkit-box-shadow: 0 0 0.5rem #0B4F6C;
+          box-shadow: 0 0 0.5rem #0B4F6C;
+}
+
+.page fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 35vw;
+  margin-left: 5rem;
+  padding: 1rem;
+  background-color: #F08700;
+  border-radius: 1rem;
+  border: 1px solid #F49F0A;
+  -webkit-box-shadow: 0 0 0.5rem #0B4F6C;
+          box-shadow: 0 0 0.5rem #0B4F6C;
+}
+
+.page fieldset label {
+  display: block;
+  width: 100%;
+  margin: 0 auto .5rem;
+  line-height: 2.5rem;
+  font-size: 1.7rem;
+}
+
+.page fieldset textarea {
+  display: block;
+  width: 100%;
+  margin: 0 auto .5rem;
+  line-height: 2.5rem;
+  font-size: 1.7rem;
+  resize: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.page fieldset input {
+  display: block;
+  width: 100%;
+  margin: 0 auto .5rem;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  border-radius: .5rem;
+}
+
+.page fieldset select {
+  display: block;
+  width: 100%;
+  margin: 0 auto .5rem;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.page .greetings {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: calc(100vw - 10rem);
+  margin: 0 auto;
+  background-color: #F08700;
+  -webkit-box-shadow: 0 0 0.5rem #0B4F6C;
+          box-shadow: 0 0 0.5rem #0B4F6C;
+  border-radius: .5rem;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 5rem;
+  color: snow;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4rem;
+  padding-left: 3rem;
+  background-color: #0B4F6C;
+  color: #F49F0A;
+}
+
+.footer .page-name {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=style_scss.css.map */

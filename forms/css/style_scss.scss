@@ -1,0 +1,161 @@
+$blue-sapphire: #0B4F6C;
+$sea-green: #00A6A6;
+$tangerine: #F08700;
+$orange-web: #F49F0A;
+
+@mixin head-foot-template {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  padding-left: 3rem;
+  background-color: $blue-sapphire;
+  color: $orange-web;
+}
+
+@mixin forms-template {
+  display: block;
+  width: 100%;
+  margin: 0 auto .5rem;
+  line-height: 2.5rem;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+.header {
+  @include head-foot-template;
+
+  .navigation {
+  
+    .navigation-list {
+      text-decoration: none;
+      list-style: none;
+  
+      li {
+        display: inline;
+        margin-right: 2rem;
+  
+        > * {
+          text-decoration: none;
+          font-size: 2rem;
+          color: $orange-web;
+        }
+      }
+    }
+  }
+}
+
+.page {
+  height: calc(100vh - 8rem);
+  background: $orange-web;
+  background: radial-gradient(circle at top right, $orange-web 0%, $tangerine 11%, $sea-green 59%);
+  background-position: top;
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: calc(100vh - 15rem);
+
+    .feedback {
+
+      .radio-form {
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+        label {
+          width: auto;
+          margin: 0 0 .5rem 0;
+        }
+
+        input {
+          width: auto;
+          margin: 0 1rem;
+        }
+
+        span {
+          font-size: 1.5rem;
+        }
+      }
+
+      input[type="submit"] {
+        width: 10rem;
+        padding: 0;
+        margin-top: 1rem;
+        background-color: $blue-sapphire;
+        color: snow;
+        box-shadow: 0 0 .5rem $blue-sapphire;
+      }
+    }
+  }
+
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    width: 35vw;
+    margin-left: 5rem;
+    padding: 1rem;
+  
+    background-color: $tangerine;
+    border-radius: 1rem;
+    border: 1px solid $orange-web;
+    box-shadow: 0 0 .5rem $blue-sapphire;
+
+    label {
+      @include forms-template;
+      font-size: 1.7rem;
+    }
+
+    textarea {
+      @include forms-template;
+      font-size: 1.7rem;
+      resize: none;
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+
+    input {
+      @include forms-template;
+      font-size: 1.5rem;
+      padding-left: 1rem;
+      border-radius: .5rem;
+    }
+
+    select {
+      @include forms-template;
+      font-size: 1.5rem;
+    }
+  }
+
+  .greetings {
+    height: fit-content;
+    width: calc(100vw - 10rem);
+    margin: 0 auto;
+  
+    background-color: $tangerine;
+    box-shadow: 0 0 .5rem $blue-sapphire;
+    border-radius: .5rem;
+  
+    font-size: 3rem;
+    text-align: center;
+    line-height: 5rem;
+    color: snow;
+  }
+}
+
+.footer {
+  @include head-foot-template;
+  .page-name {
+    font-size: 2rem;
+  }
+}
