@@ -12,7 +12,7 @@ submit.onclick = function (e) {
 	xhr.open('GET', url, false);
 	xhr.send();
 	let DATA = JSON.parse(xhr.responseText);
-	console.log(DATA);
+	// console.log(DATA); Проверочный)
 	document.querySelector('.text').innerHTML = `Temperature in ${city} is ${Math.round(
 		DATA.main.temp - 273
 	)}℃ and Wind speed is ${DATA.wind.speed} m/s`;
