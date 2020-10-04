@@ -1,0 +1,19 @@
+@import url(reset.css);
+
+.main {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: pink;
+}
+
+.main > section {
+  font-weight: 700;
+  font-size: 5rem;
+  color: blueviolet;
+  text-align: center;
+}
