@@ -27,22 +27,22 @@
 // }
 
 // // Перебор многомерного массива реперов и продюсеров
-let newSchool = [
-	[
-		['Lil Yachty', 'Playboi Carti', 'Lil Uzi Vert'],
-		['Sonny Digital', 'Metro Boomin', '12Hunna'],
-	],
-	[
-		['Yung Lean', 'Ecco2K', 'Bladee'],
-		['Whitearmor', 'PJ Beats', 'Yung Gud'],
-	],
-];
+// let newSchool = [
+// 	[
+// 		['Lil Yachty', 'Playboi Carti', 'Lil Uzi Vert'],
+// 		['Sonny Digital', 'Metro Boomin', '12Hunna'],
+// 	],
+// 	[
+// 		['Yung Lean', 'Ecco2K', 'Bladee'],
+// 		['Whitearmor', 'PJ Beats', 'Yung Gud'],
+// 	],
+// ];
 
-newSchool.forEach((e) => {
-	e.forEach((e) => {
-		e.forEach((e) => {
-			console.log(e);
-		})
-	})
-})
+// newSchool.forEach((e) => {
+// 	e.forEach((e) => {
+// 		e.forEach((e) => {
+// 			console.log(e);
+// 		})
+// 	})
+// })
 
