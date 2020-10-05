@@ -1,45 +1,64 @@
 class Person {
-  constructor(name) {
-    this.name = name;
-    this.happiness = 0
-  }
-  set plusHappiness() {
-    return this.happiness++;
-  }
-  hasCat() {
-    this.plusHappiness()
-  }
-  hasRest() {
-    this.plusHappiness()
-  }
-  hasMoney() {
-    this.plusHappiness()
-  }
-  isSunny() {
-    let xhr = new XMLHttpRequest();
-    xhr.open('GET', `http://api.openweathermap.org/data/2.5/weather?q=Moscow&appid=d3dd038f6d1e063cb7899182d8e507e2`, false);
-	  xhr.send();
-    let DATA = JSON.parse(xhr.responseText);
-    if (Math.round(DATA.main.temp - 273) > 15) {
-      this.plusHappiness();
-    } else {
-      return this.happiness;
-    }
-  }
-};
-let hasCat = document.querySelector('#hasCat').value;
+	constructor(name) {
+		this.name = name;
+		this.happiness = 0;
+	}
+	plusHappiness(v = 1) {
+		return this.happiness++;
+	}
+	hasCat() {
+		this.plusHappiness();
+	}
+	hasRest() {
+		this.plusHappiness();
+	}
+	hasMoney() {
+		this.plusHappiness();
+	}
+	isSunny() {
+		let xhr = new XMLHttpRequest();
+		xhr.open(
+			'GET',
+			`http://api.openweathermap.org/data/2.5/weather?q=Moscow&appid=d3dd038f6d1e063cb7899182d8e507e2`,
+			false
+		);
+		xhr.send();
+		let DATA = JSON.parse(xhr.responseText);
+		if (DATA.main.temp - 273 > 15) {
+			this.plusHappiness();
+			return this.happiness;
+		} else {
+			return this.happiness;
+		}
+	}
+}
 
 const submit = document.querySelector('#submitButton');
 
 submit.onclick = function (e) {
-  e.preventDefault();
-  let personName = document.querySelector('#personName').value;
-  let hasCat = document.querySelector('#hasCat').value;
-  let hasRest = document.querySelector('#hasRest').value;
-  let hasMoney = document.querySelector('#hasMoney').value;
+	e.preventDefault();
+	let personName = document.querySelector('input[name="name"]').value;
+	let hasCat = document.querySelector('input[name="cat"]:checked').value;
+	let hasRest = document.querySelector('input[name="rest"]:checked').value;
+	let hasMoney = document.querySelector('input[name="money"]:checked').value;
 
-  let user = new Person(personName);
-  if (hasCat === 'Да') {
-    user.plusHappiness()
-  }
-}
+	let user = new Person(personName);
+	hasCat === 'yes' ? user.hasCat() : user.happiness;
+	hasRest === 'yes' ? user.hasRest() : user.happiness;
+	hasMoney === 'yes' ? user.hasMoney() : user.happiness;
+
+	user.isSunny();
+
+	let nameDisplay = document.querySelector('.personName');
+	let iconDisplay = document.querySelector('.icon');
+
+	nameDisplay.innerHTML = personName;
+
+	if (user.happiness === 4) {
+		iconDisplay.innerHTML = '😄';
+	} else if (user.happiness === 2 || user.happiness === 3) {
+		iconDisplay.innerHTML = '😐';
+	} else if (user.happiness < 2) {
+		iconDisplay.innerHTML = '🙁';
+	}
+};
