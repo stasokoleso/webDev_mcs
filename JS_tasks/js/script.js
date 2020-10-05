@@ -4,27 +4,27 @@
 // value >= 0 ? console.log(value) : console.log(-value);
 
 // // 4.3.1 Камень, ножницы, бумага
-// const rock = 0;
-// const scissors = 1;
-// const paper = 2;
+const rock = 0;
+const scissors = 1;
+const paper = 2;
 
 // // попросим игрока ввести ответ в виде числа
-// let player = parseInt(prompt('Your choice: 0 - rock, 1 - scissors, 2 - paper'));
-// // Рандомное число 0, 1 или 2 — разберем это позже, пока не заморачивайтесь
-// let computer = Math.floor(Math.random() * 3);
+let player = parseInt(prompt('Your choice: 0 - rock, 1 - scissors, 2 - paper'));
+// Рандомное число 0, 1 или 2 — разберем это позже, пока не заморачивайтесь
+let computer = Math.floor(Math.random() * 3);
 
 // // опишем все условия и будем выводить в консоль 'computer win' или 'player win'
-// if (player == computer) {
-// 	console.log(`Draw! Try again.`);
-// } else if (
-// 	(player == rock && computer == scissors) ||
-// 	(player == scissors && computer == paper) ||
-// 	(player == paper && computer == rock)
-// ) {
-// 	console.log(`Congratulations, you win!`);
-// } else {
-// 	console.log(`Looser! Try again.`);
-// }
+if (player == computer) {
+	console.log(`Draw! Try again.`);
+} else if (
+	(player == rock && computer == scissors) ||
+	(player == scissors && computer == paper) ||
+	(player == paper && computer == rock)
+) {
+	console.log(`Congratulations, you win!`);
+} else {
+	console.log(`Looser! Try again.`);
+}
 
 // // Перебор многомерного массива реперов и продюсеров
 let newSchool = [
@@ -42,7 +42,7 @@ newSchool.forEach((e) => {
 	e.forEach((e) => {
 		e.forEach((e) => {
 			console.log(e);
-		})
-	})
-})
+		});
+	});
+});
 
