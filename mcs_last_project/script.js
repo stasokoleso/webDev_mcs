@@ -22,8 +22,7 @@ class Person {
 		xhr.send();
 		let DATA = JSON.parse(xhr.responseText);
 		if (DATA.main.temp - 273 > 15) {
-			this.happiness++;
-			return this.happiness;
+			return this.happiness++;
 		} else {
 			return this.happiness;
 		}
@@ -46,16 +45,16 @@ submit.onclick = function (e) {
 
 	user.isSunny();
 
-	let nameDisplay = document.querySelector('.personName');
-	let iconDisplay = document.querySelector('.icon');
+	let displayedName = document.querySelector('.personName');
+	let displayedIcon = document.querySelector('.icon');
 
-	nameDisplay.innerHTML = personName;
+	displayedName.innerHTML = personName + `:`;
 
 	if (user.happiness === 4) {
-		iconDisplay.innerHTML = '😄';
+		displayedIcon.innerHTML = '😄';
 	} else if (user.happiness === 2 || user.happiness === 3) {
-		iconDisplay.innerHTML = '😐';
+		displayedIcon.innerHTML = '😐';
 	} else if (user.happiness < 2) {
-		iconDisplay.innerHTML = '🙁';
+		displayedIcon.innerHTML = '🙁';
 	}
 };

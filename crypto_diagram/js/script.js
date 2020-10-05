@@ -21,22 +21,22 @@ crypto.forEach((element) => {
 let maxPrice = Math.max(...cryptoPrices);
 
 crypto.forEach((element) => {
-	let newDiv = document.createElement('div');
-	newDiv.setAttribute('class', `${element.name.toLowerCase()}`);
-	let newDiagramLine = document.createElement('div');
-	newDiagramLine.setAttribute('class', `${element.name.toLowerCase()} diagram`);
-	let newHeader = document.createElement('h1');
-	let newPriceValue = document.createElement('h4');
+	let div = document.createElement('div');
+	div.setAttribute('class', `${element.name.toLowerCase()}`);
+	let diagram = document.createElement('div');
+	diagram.setAttribute('class', `${element.name.toLowerCase()} diagram`);
+	let header = document.createElement('h1');
+	let smallHeader = document.createElement('h4');
 
-	newHeader.innerHTML = element.name;
-	newPriceValue.innerHTML = element.price;
-	newDiagramLine.setAttribute('style', 'height: 50px; background-color: blue; border-radius: 10px');
-	newDiagramLine.style['width'] = `${Math.floor(element.price) / maxPrice}` * 100 + `px`;
+	header.innerHTML = element.name;
+	smallHeader.innerHTML = element.price;
+	diagram.setAttribute('style', 'height: 50px; background-color: blue; border-radius: 10px');
+	diagram.style['width'] = `${Math.floor(element.price) / maxPrice}` * 100 + `%`;
 
-	newDiv.appendChild(newHeader);
-	newDiv.appendChild(newPriceValue);
-	newDiv.appendChild(newDiagramLine);
+	div.appendChild(header);
+	div.appendChild(smallHeader);
+	div.appendChild(diagram);
 
 	const current = document.querySelector('.main');
-	current.appendChild(newDiv);
+	current.appendChild(div);
 });
