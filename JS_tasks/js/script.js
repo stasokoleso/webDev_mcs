@@ -1,3 +1,4 @@
+'use strict';
 // // 4.2.1, 4.4.1 Модуль числа (сразу писал тернарный)
 // let value = parseInt(prompt('Please, enter any number'));
 
@@ -26,25 +27,25 @@
 // 	console.log(`Looser! Try again.`);
 // }
 
-// // Перебор многомерного массива реперов и продюсеров
-// let newSchool = [
-// 	[
-// 		['Lil Yachty', 'Playboi Carti', 'Lil Uzi Vert'],
-// 		['Sonny Digital', 'Metro Boomin', '12Hunna'],
-// 	],
-// 	[
-// 		['Yung Lean', 'Ecco2K', 'Bladee'],
-// 		['Whitearmor', 'PJ Beats', 'Yung Gud'],
-// 	],
-// ];
+// Перебор многомерного массива реперов и продюсеров
+let newSchool = [
+	[
+		['Lil Yachty', 'Playboi Carti', 'Lil Uzi Vert'],
+		['Sonny Digital', 'Metro Boomin', '12Hunna'],
+	],
+	[
+		['Yung Lean', 'Ecco2K', 'Bladee'],
+		['Whitearmor', 'PJ Beats', 'Yung Gud'],
+	],
+];
 
-// newSchool.forEach((e) => {
-// 	e.forEach((e) => {
-// 		e.forEach((e) => {
-// 			console.log(e);
-// 		});
-// 	});
-// });
+newSchool.forEach((e) => {
+	e.forEach((e) => {
+		e.forEach((e) => {
+			console.log(e);
+		});
+	});
+});
 
 // Перебор массива фильтром
 
